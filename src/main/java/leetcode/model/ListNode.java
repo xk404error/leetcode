@@ -1,4 +1,4 @@
-package model;
+package leetcode.model;
 
 /**
  * @description:

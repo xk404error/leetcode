@@ -1,4 +1,6 @@
-import model.ListNode;
+package leetcode;
+
+import leetcode.model.ListNode;
 
 //反转一个单链表。
 public class Test206 {
