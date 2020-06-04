@@ -27,7 +27,7 @@ public class Testtest {
         for (Object o : list1) {
             System.out.println(o.toString());
         }*/
-        System.out.println(test1());
+       testThread();
     }
 
     public static int test1(){
@@ -46,5 +46,15 @@ public class Testtest {
             return a;
         }
 
+    }
+
+    public static void testThread(){
+        //Thread.currentThread().interrupt();
+        System.out.println("线程是否被打断:" + Thread.currentThread().isInterrupted());
+        //true
+        System.out.println("线程确认是否被打断:" + Thread.currentThread().isInterrupted());
+
+        System.out.println("interrupted test 1 :" + Thread.currentThread().interrupted());
+        System.out.println("interrupted test 2 :" + Thread.currentThread().interrupted());
     }
 }
