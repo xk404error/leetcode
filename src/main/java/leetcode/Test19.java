@@ -8,7 +8,7 @@ public class Test19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         //找到倒数第N个节点
         int step=0;
-        ListNode node = new ListNode(0);
+        ListNode node = new ListNode(0);//解决边界问题
         node.next=head;
         ListNode first=node;
         ListNode scend=node;
@@ -21,6 +21,6 @@ public class Test19 {
         }
         //删除该节点
         scend.next=scend.next.next;
-        return  head;
+        return  node.next;
     }
 }
